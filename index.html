@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blockchat - Revolusi Komunikasi dengan Blockchain</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+  
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/lineicons.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/default.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <div id="preloader"></div>
+
+  <div id="header-section"></div>
+
+  <div id="service-section"></div>
+
+  <!-- <div id="about-section"></div> -->
+
+  <div id="feature-section"></div>
+
+  <!-- <div id="screenshot-section"></div> -->
+
+  <div id="download-section"></div>
+
+  <div id="footer-section"></div>
+
+  <div id="top-fab"></div>
+
+  <script>
+    function loadComponent(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Could not load ${file}`);
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    }
+
+    loadComponent('preloader', './page/main/components/preloader.html');
+    loadComponent('header-section', './page/main/section/header-section.html');
+    loadComponent('service-section', './page/main/section/service-section.html');
+    loadComponent('about-section', './page/main/section/about-section.html');
+    loadComponent('download-section', './page/main/section/download-section.html');
+    loadComponent('feature-section', './page/main/section/feature-section.html');
+    loadComponent('screenshot-section', './page/main/section/screenshot-section.html');
+    loadComponent('footer-section', './page/main/section/footer-section.html');
+    loadComponent('top-fab', './page/main/components/top-fab.html');
+  </script>
+
+  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/scrolling-nav.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
